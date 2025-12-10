@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    <title> Welcome to TaskMate</title>
+{% endblock title %}
+
+{% block content %}
+  <div class="container">
+    <div class="row mt-4">
+        <div class="col-lg-4">
+          <img src="{% static 'images/1.jpg' %}" alt="Notes" class="rounded-lg shadow" width="370" height="280">
+        </div>
+        <div class="col-lg-4">
+          <img src="{% static 'images/2.jpg' %}" alt="Notes" class="rounded-lg shadow" width="370" height="280">
+        </div>
+        <div class="col-lg-4">
+           <img src="{% static 'images/3.jpg' %}" alt="Notes" class="rounded-lg shadow" width="370" height="280">
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-10 offset-md-1">
+            <center><p class="h1 text-primary">Ensure your layout communicates purpose.</p></center>
+            <center><p class="h2 mt-3"> Localized content trumps generic Latin.</p></center>
+            <center><p class="h5"> Simulate mobile-first experiences relevant to Panamanian users.</p></center>
+
+            <center><a href="{% url 'todolist' %}"><button type="button" class="btn btn-primary btn-lg mt-3 shadow">Let's get Started</button></a></center>
+            </div>
+        </div>
+    </div>
+  </div>
+{% endblock content %}
